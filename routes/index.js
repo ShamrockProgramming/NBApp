@@ -6,4 +6,13 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+
+router.get('/standings/all', function(req, res){
+    res.render('leaguestandings',{});
+});
+
+router.get('/league/schedule', function(req, res){
+    res.render('leagueschedule',{});
+});
+
 module.exports = router;
