@@ -35,12 +35,17 @@ main > section{
     width: 50%;
     float: left;
 }
+/*schedules page*/
+.left-content, .right-content{
+
+}
 
 .team-item,
 .schedule-item{
-    width: 95%;
+    width: 80%;
     height: 100px;
     background-color: #999;
+    margin: 0 auto;
 }
 /*leaguestandings page*/
 
