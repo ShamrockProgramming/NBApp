@@ -8,11 +8,12 @@ a {
 }
 
 /* main content styles*/
-
+main{
+    height: 600px;
+}
 main,
 nav{
     width: 60%;
-    height: 600px;
     background-color: #ccc;
     min-width: 400px;
     margin: 0 auto;
@@ -41,3 +42,30 @@ main > section{
     height: 100px;
     background-color: #999;
 }
+/*leaguestandings page*/
+
+#leaguestandings{
+    width: 60%;
+    height: 800px;
+    background-color: #ccc;
+    min-width: 400px;
+    margin: 0 auto;
+
+}
+.conference{
+    background-color: #060;
+    font-size: 18px;
+    height: 400px;
+    width: 96%;
+    padding:8px;
+    margin:0 auto;
+}
+.stats{
+    display: flex;
+}
+.stats-item{
+    flex:1;
+}
+
+
+
