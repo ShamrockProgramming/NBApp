@@ -36,8 +36,9 @@ main > section{
     float: left;
 }
 /*schedules page*/
-.left-content, .right-content{
-
+.form-item{
+    margin-left: 8px;
+    margin-top: 16px;
 }
 
 .team-item,

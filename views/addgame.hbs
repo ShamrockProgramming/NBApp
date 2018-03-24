@@ -1,0 +1,30 @@
+
+<main>
+    <h1>Add an NBA game!</h1>
+
+    {{#if error}} <span>{{error}}</span>{{/if}}
+    <form action="/schedules/addgame" method="post">
+        <div class="form-item">
+            <label>Game Number</label>
+            <input type="text" name="id" class="" placeholder="add the game number">
+        </div>
+        <div class="form-item">
+            <label>Home</label>
+            <input type="text" name="home" class="" placeholder="add home team">
+        </div>
+        <div class="form-item">
+            <label>Away</label>
+            <input type="text" name="away" class="" placeholder="away team">
+        </div>
+        <div class="form-item">
+            <label>Location</label>
+            <input type="text" name="location" class="" placeholder="add location">
+        </div>
+        <div class="form-item">
+            <label>Time</label>
+            <input type="text" name="time" class="" placeholder="add time">
+        </div>
+        <input class="form-item" type="submit" class="" value="Save">
+    </form>
+    <a class="form-item" href="/">Back</a>
+</main>
