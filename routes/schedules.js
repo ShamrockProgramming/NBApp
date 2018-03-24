@@ -46,4 +46,25 @@ router.post('/addgame', function(req, res, next) {
     });
 
 });
+
+router.post('/search/',function (req, res, next){
+    let id = "game"+req.body.id;
+    client.hgetall(id,function(err,obj){
+        if(!obj){
+            res.render('index',{
+                error: 'game does not exist',
+                title: 'NO!'
+            });
+        }
+        else{
+            console.log(obj);
+            obj.gameid = req.body.id;
+            res.render('game',{
+                game:obj
+            });
+        }
+    })
+});
+
+
 module.exports = router;
